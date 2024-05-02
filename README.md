@@ -15,10 +15,12 @@ Security and Privacy Issues
 Solution
 This project aims to implement a Database Management System (DBMS) to replace the traditional method of storing and managing data, addressing the aforementioned issues.
 
-Project Background
+**Project Background**
+
 The Hospital Management System project utilizes MySQL as the DBMS. MySQL is an open-source relational database management system widely used for managing structured data, providing robust features for data storage, retrieval, and management.
 
 **Description of the Project**
+
 Welcome to our Hospital Management System project, where we efficiently organize the operations of a medical facility. Within our system:
 
 Each doctor is uniquely identified by their ID (d_id) and has essential details such as name, specialized area of treatment, and charges for their services.
@@ -29,6 +31,7 @@ ER Diagram Creation
 The development of the Schema for RDBMS started with the Entity-Relationship Model(ER Model). Then the ER Model was mapped to the Relational Model.
 
 **Description of ER Diagram**
+
 The data description of each of these entities is as follows:
 
 Doctor
@@ -39,7 +42,11 @@ Bill
 Attributes: bill_num (PK), doctor_id (FK), room_id (FK), p_id (FK), total_charges
 Room
 Attributes: room_id (PK), room_charges, p_id (FK)
-Conversion of ER Diagram into Tables
+
+
+**Conversion of ER Diagram into Tables**
+
+
 Strong Entities: Doctor, Patient, Bill, Room
 Weak Entities: None
 Mapping Cardinalities
@@ -47,7 +54,8 @@ One-to-One Relationship Types: PATIENT is assigned ROOM.
 One-to-Many Relationship Types: DOCTOR treats PATIENT, PATIENT issued BILL.
 Mapping multivalued attributes: No multivalued attributes.
 Mapping N-array Entities: No N-array Entities.
-Normalization of Tables up to 3-NF
+**Normalization of Tables up to 3-NF**
+
 First Normal Form (1NF): All attributes contain atomic values.
 Second Normal Form (2NF): All non-key attributes are fully functionally dependent on the entire primary key.
 Third Normal Form (3NF): No transitive dependencies exist in the database.
