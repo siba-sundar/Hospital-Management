@@ -54,6 +54,8 @@ One-to-One Relationship Types: PATIENT is assigned ROOM.
 One-to-Many Relationship Types: DOCTOR treats PATIENT, PATIENT issued BILL.
 Mapping multivalued attributes: No multivalued attributes.
 Mapping N-array Entities: No N-array Entities.
+
+
 **Normalization of Tables up to 3-NF**
 
 First Normal Form (1NF): All attributes contain atomic values.
